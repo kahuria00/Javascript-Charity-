@@ -1,0 +1,12 @@
+Declaration is the means of creating a variable,when declaring a variable var is the keyword.
+
+For example : if one wishes to declare a variable denoting cars: i.e. var cars
+
+While Initialization is the means of assigning an initial value to a variable. 
+Hence undefined is the initial value of a declared variable.
+To assign a value to the variable,
+ we use the equal sign i.e.  var cars =
+
+definition is the means of assigning what value a declared variable holds
+for example :var cars = ["mercedes","porche","jeep"]
+ 
