@@ -1,0 +1,21 @@
+var fruits_list=["Apple","Guava","Watermelon","Pineapple","Mango","Blueberry"]
+
+
+fruits_list
+(6) ["Apple", "Guava", "Watermelon", "Pineapple", "Mango", "Blueberry"]
+
+console.log(fruits_list);
+
+(6) ["Apple", "Guava", "Watermelon", "Pineapple", "Mango", "Blueberry"]
+0: "Apple"
+1: "Guava"
+2: "Watermelon"
+3: "Pineapple"
+4: "Mango"
+5: "Blueberry"
+length: 6
+console.log(fruits_list.length);
+6
+console.log(fruits_list[0]);
+
+ Apple
