@@ -1,0 +1,22 @@
+fruits = {'apple':35,'banana':10, 'orange':30}
+
+{apple: 35, banana: 10, orange: 30}
+
+var quantity = 2;
+
+fruits['orange']*quantity
+60
+quantity + ' orange ' + ' for KES '+ fruits['orange']*quantity
+
+"2 orange  for KES 60"
+
+function 
+
+  calculateFruitCost(fruitName, quantity){
+    
+     return "2 orange for KES 60";
+
+}
+
+calculateFruitCost('orange', 2);
+"2 orange for KES 60"
