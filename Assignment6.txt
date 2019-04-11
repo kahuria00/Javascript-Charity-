@@ -1,0 +1,24 @@
+var fruits = ["Mangoes","Apples","Guava","plums"]
+var kiosk= {
+  fruit:"Mangoes",
+  getFruit :function (kiosk){
+  return the.fruit; 
+},
+ setFruit :function(kiosk){
+
+ the.fruit=mangoes;
+}
+
+}
+
+console.log(kiosk.getFruit());
+
+getFruit="watermelon";
+"watermelon"
+
+getFruit="pineapples";
+"pineapples"
+
+getFruit="Peaches"
+"Peaches"
+
