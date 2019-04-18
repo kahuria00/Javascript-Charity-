@@ -1,0 +1,21 @@
+class KioskCalc{
+constructor(fruit,quantity){
+  
+  this.fruitPriceList={"plums":10,"oranges":30};
+  this.fruit_name=fruit;
+  this.that_fruit=this.fruitPriceList[fruit];
+  this.quantity=quantity;
+}
+  
+  getTotalCost (){
+    return this.that_fruit*this.quantity;
+   
+}
+  getTotalCost(){
+    return this.that_fruit*this.quantity;
+}
+  
+}
+ var that_kioskCalc=new KioskCalc("oranges",2);
+console.log(that_kioskCalc.quantity+" "+that_kioskCalc.fruit_name +" for KES "+ that_kioskCalc.getTotalCost());
+"2 oranges for KES 60"
