@@ -1,0 +1,157 @@
+class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+
+  addFarm(farmId, name, farmer, phone, address){
+    let farm={ farmId:farmId,
+               name:name,
+               farmer:farmer,
+               phone:phone,
+               address:address
+           }
+    return this.farms.push(farm)
+   }
+  
+  getFarm(farmId){
+    for (var f=0;f<this.farms.length;f++){
+      let farm=this.farms[f];
+      if (farm.farmId===farmId){
+        return farm
+       }
+    }
+  }
+   
+  removeFarm(farmId){
+    let farm=this.getFarm(farmId)
+    let index=this.farms.indexOf(farm);
+    this.farms.splice(index,1)
+  }
+  
+  updateFarm(farmId, name, farmer, phone, address){
+    let farm={ farmId:farmId,
+               name:name,
+               farmer:farmer,
+               phone:phone,
+               address:address
+           }
+    return this.farms.push(farm)
+    }
+
+  addVendor(vendorId, name, phone){
+  let vendor={
+                vendorId:vendorId,
+                name:name,
+                phone:phone
+        }
+  return this.vendors.push(vendor);
+}  
+ getVendor(vendorId){
+    for (var v=0;v<this.vendors.length;v++){
+      let vendor=this.vendors[v];
+      if (vendor.vendorId===vendorId){
+        return vendor
+       }
+    }
+  }  
+  
+removeVendor(vendorId){
+  let vendor=this.getVendor(vendorId)
+  let index=this.vendors.indexOf(vendor);
+  this.vendors.splice(index,0)
+}
+  updateVendor( vendorId, name, phone){
+   let vendor={
+                vendorId:vendorId,
+                name:name,
+                phone:phone
+        }
+  return this.vendors.push(vendor); 
+    
+  }
+ addProduct(productId, name, price){
+  let product={
+                productId:productId,
+                name:name,
+                price:price
+        }
+  return this.products.push(product);
+}
+   getProduct(productId){
+    for (var p=0;p<this.products.length;p++){
+      let product=this.products[p];
+      if (product.productId===productId){
+        return product
+       }
+    }
+  }  
+  
+removeProduct(productId){
+  let product=this.getProduct(productId)
+  let index=this.products.indexOf(product);
+  this.products.splice(index,0)
+}
+  updateProduct( productId, name, price){
+   let product={
+                productId:productId,
+                name:name,
+               price:price
+        }
+  return this.products.push(product); 
+  }
+  
+ /*calc_Order(productId, quantity) {
+   
+ }*/
+
+}
+
+var farmer1= new Mkulima();
+farmer1.addFarm("0010","Kiamunyi Farms","John Deere","+254-2224-2900","Kiamunyi,Nakuru");
+console.log(farmer1.farms);
+
+var farmer2=new Mkulima();
+farmer2.addFarm("0011","Chemusian Farm","Daniel Moi&Sons","0721345670","Ngata,Nakuru")
+console.log(farmer2.farms)
+
+//farmer2.removeFarm(0);
+ 
+var farmer3=new Mkulima();
+farmer3.updateFarm(0012,"Rongai Farm","Muhoho Kenyatta","0720124264","Ol Rongai")
+console.log(farmer3.farms)
+
+var vendor1=new Mkulima();
+vendor1.addVendor("001","Ukwala","+2547347090")
+console.log(vendor1.vendors);
+
+var vendor2=new Mkulima();
+vendor2.addVendor("002","Tuskys","+2547232323")
+console.log(vendor2.vendors);
+
+//vendor2.removeVendor(1)
+
+
+var vendor5=new Mkulima();
+vendor5.updateVendor("005","Nakumatt","+2549999972");
+console.log(vendor5.vendors);
+
+var product2=new Mkulima();
+product2.addProduct("KES 200","Ketepa Tea","555555-234")
+console.log(product2.products);
+
+
+var product1=new Mkulima();
+product1.updateProduct("KES 120","Maziwa Mala","-254,0008,0009");
+console.log(product1.products);
+
+
+//product2.removeProduct;
+
+//console.log(print(products[]));
+
+
+
