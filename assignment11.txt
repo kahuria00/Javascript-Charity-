@@ -1,0 +1,56 @@
+var body=document.body
+body.style.backgroundColor="silver"
+
+var h1=document.getElementById("title")
+h1.style.color="green"
+
+ 
+
+var list =document.createElement("li")
+list.innerHTML="pineapples"
+var fruit=document.getElementById("fruList")
+fruit.appendChild(list)
+
+var li =document.createElement("li")
+li.innerHTML="Potatoes"
+var veglist=document.getElementById("vegList")
+veglist.appendChild(li)
+
+var h3=document.getElementsByTagName("h3")
+ h3.innerHTML
+ var fonts=h3.document.getElementByTagName
+ fonts.style.textTransform="uppercase"
+
+
+ASYNC AND AWAIT
+
+Async function is a modification to the syntax used in writing promises.It makes writing promises easier.
+Promises give us an easier way to deal with asynchrony in our code in a sequential manner.
+async function newAccessory(){
+                 return "bag"
+			}
+and a diffrent function that does the same thing but in a promise format.
+		function newAccesory(){
+			return promise.resolve("bag")
+			}
+Async function when a promise is rejected.
+		function foo(){
+			return promise.reject(100)
+			}
+// Is equal to 
+               async function(){
+                     throw 60
+
+
+
+await is an operator used to wait for a promise to resolve or reject. It can only be used inside an async function.
+The word of caution when each step is done sequentially, with each additional step waiting for the step before to resolve or reject before continuing.
+ If you instead want the steps to happen in parallel, 
+you can simply use Promise.all to wait for all the promises to have fulfilled.
+	
+async function msg() {
+  const [x, y, z] = await Promise.all([who(), what(), where()]);
+
+  console.log(`${ x} ${ y } ${ z }`);
+                  }
+msg();
